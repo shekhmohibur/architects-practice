@@ -19,9 +19,21 @@
     display: flex;
   }
   /* navbar styles here  */
+  header{
+    padding:25px 240px;
+    background: #FF900E1A;
+  }
   .nav-links{
     gap: 20px;
   }
   .nav-item{
     list-style: none;
   }
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.banner-img{
+    width: 100%;
+}
