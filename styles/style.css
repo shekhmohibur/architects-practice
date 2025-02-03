@@ -14,14 +14,35 @@
   }
   a{
     text-decoration: none;
+    color: #000000;
   }
   .display-flex{
     display: flex;
   }
-  /* navbar styles here  */
+  .primary-btn{
+    background: #FF900E;
+    Width: 150px;
+    height: 55px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .primary-btn:hover{
+    background: #d67404;
+    transition: 0.4s;
+  }
+  /* navbar + banner styles here  */
   header{
     padding:25px 240px;
     background: #FF900E1A;
+  }
+  .brand{
+    font-weight: 800;
+    font-size: x-large;
   }
   .nav-links{
     gap: 20px;
@@ -32,8 +53,52 @@
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading{
+    font-weight: 800;
+}
+.short-identity{
+    padding: 0 200px;
+}
+.banner-sub{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
 }
 .banner-img{
     width: 100%;
 }
+/* viewport for diffrent devices  */
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-links{
+        flex-direction: column;
+    }
+    header, .short-identity{
+        padding: 0;
+    }
+  }
+@media screen and (min-width:577px)and (max-width:767px){
+    header, .short-identity{
+        padding: 20px;
+    }    
+}
+  @media screen and (min-width: 768px) and (max-width: 1250px) {
+    header{
+        padding:25px 100px;
+      }
+    .short-identity{
+        padding:0 70px;
+    }
+  }
+  
+  /* Laptops */
+  @media screen and (min-width: 1025px) {
+    
+  }
