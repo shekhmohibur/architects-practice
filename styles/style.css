@@ -112,13 +112,14 @@
 .features-container img{
   width: 100%;
 }
-.features-heading{
+#span-bar{
+  align-items: center;
   max-width: 468px;
 }
-.features-heading span{
-  width: 15px;
+#span-bar span{
+  width: 5px;
   background: #FF900E;
-  height: 120px;
+  height: 106px;
   display: inline-block;
   margin-right: 21px;
 }
