@@ -210,7 +210,16 @@
 .sponsors img{
   filter: grayscale(100%);
 }
-
+/* footer section styles here */
+.reservation{
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #FF900E1A;
+  padding: 39px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* viewport for diffrent devices  */
 @media screen and (max-width: 576px) {
     .heading{
