@@ -189,6 +189,23 @@
   font-size: 20px;
   font-weight: 600;
 }
+/* sponsors section styles here  */
+
+.sponsors-wrap{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.sponsors-box {
+  display: block; /* Ensure it's visible */
+}
+
+
+.sponsors{
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponsors img{
+  filter: grayscale(100%);
+}
 
 
 
