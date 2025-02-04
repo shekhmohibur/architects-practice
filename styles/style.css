@@ -151,12 +151,44 @@
   font-size: 4rem;
   font-weight: 700;
 }
-
-
-
-
-
-
+/* some facts section styles are here */
+.facts{
+  max-width: 1390px;
+  margin: 0 auto;
+}
+.some-facts{
+  max-width: 542px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.facts-cards{
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 76px;
+  padding-left: 50px;
+}
+.facts-card{
+  width: 240px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+}
+.facts-card .card-quantity{
+  font-size: 2.5rem;
+  color: rgb(66, 66, 66);
+  font-weight: 600;
+}
+.facts-card .card-nameFor{
+  color: rgb(114, 114, 114);
+  font-size: 20px;
+  font-weight: 600;
+}
 
 
 
@@ -204,4 +236,4 @@
       position: static;
     }
 
-}  
+}
