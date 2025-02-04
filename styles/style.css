@@ -233,6 +233,16 @@
     .features-badge{
       position: static;
     }
+    .facts-cards{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      margin: 0 5%;
+    }
+    .sponsors{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      margin: 0 33%;
+    }
   }
 @media screen and (min-width:577px)and (max-width:992px){
     .short-identity{
@@ -248,11 +258,19 @@
     .features-container{
       flex-direction: column;
     }
-    .teams .primary-btn{
+    .teams .primary-btn,
+    .some-facts{
       margin: 0 auto;
     }
     .features-badge{
       position: static;
     }
-
+    .facts-cards{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .sponsors{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
 }
