@@ -37,7 +37,7 @@
   }
   /* navbar + banner styles here  */
   header{
-    padding:25px 240px;
+    padding:25px 0;
     background: #FF900E1A;
   }
   .brand{
@@ -88,14 +88,10 @@
     }
   }
 @media screen and (min-width:577px)and (max-width:767px){
-    header, .short-identity{
+    .short-identity{
         padding: 20px;
     }    
 }
-  @media screen and (min-width: 768px) and (max-width: 1250px) {
-    header{
-        padding:25px 100px;
-      }
     .short-identity{
         padding:0 70px;
     }
