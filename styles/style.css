@@ -28,6 +28,12 @@
   .section-gap{
     margin: 80px 0;
   }
+  #primary-color{
+    color: #FF900E;
+  }
+  .primary-heading{
+    font-size: 2.8rem;
+  }
   .primary-btn{
     background: #FF900E;
     Width: 150px;
@@ -35,7 +41,7 @@
     border-radius: 5px;
     outline: none;
     border: none;
-    font-size: 14px;
+    font-size: 1.15rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -51,7 +57,7 @@
   }
   .brand{
     font-weight: 800;
-    font-size: x-large;
+    font-size: 2.25rem;
   }
   .nav-links{
     gap: 20px;
@@ -92,12 +98,58 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-
-
-
-
-
-
+.quick-list{
+  flex-direction: column;
+  gap: 25px;
+}
+/* features love and enjoy */
+.features-container{
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 130px;
+  gap: 140px;
+}
+.features-container img{
+  width: 100%;
+}
+.features-heading{
+  max-width: 468px;
+}
+.features-heading span{
+  width: 15px;
+  background: #FF900E;
+  height: 120px;
+  display: inline-block;
+  margin-right: 21px;
+}
+.features-lists{
+  max-width: 586px;
+  flex-direction: column;
+  gap: 20px;
+}
+.features-card{
+  padding: 30px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features-card h5{
+  font-size: 1.25rem;
+}
+.features-badge{
+  padding: 45px 42px;
+  border-radius: 8px;
+  background: rgb(255, 144, 14);
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: -70px;
+  left: -70px;
+}
+.features-badge span{
+  font-size: 4rem;
+  font-weight: 700;
+}
 
 
 
@@ -112,7 +164,8 @@
     .heading{
         font-size: 24px;
     }
-    .navbar{
+    .navbar,
+    .teams{
         flex-direction: column;
     }
     .nav-links{
@@ -121,12 +174,21 @@
     header, .short-identity{
         padding: 0;
     }
+    .teams-gallery{
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
-@media screen and (min-width:577px)and (max-width:767px){
+@media screen and (min-width:577px)and (max-width:992px){
     .short-identity{
         padding: 20px;
     }    
     .short-identity{
         padding:0 70px;
+    }
+    .teams-gallery{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .teams{
+      flex-direction: column;
     }
 }  
